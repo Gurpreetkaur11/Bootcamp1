@@ -1,19 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorAccent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="GURPREET KAUR"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:hint="Name"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:id="@+id/etName"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:hint="Email"
+        android:textSize="24sp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/etEmail"
+        android:layout_below="@+id/etName"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        android:id="@+id/etPassword"
+        android:layout_below="@+id/etEmail"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        android:id="@+id/etConfirmPassword"
+        android:layout_below="@+id/etPassword"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etConfirmPassword"
+        android:layout_margin="4dp"
+        android:text="Login"
+        android:textSize="20sp"
+        android:id="@+id/btLogin"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        />
+
+
+</RelativeLayout>
+

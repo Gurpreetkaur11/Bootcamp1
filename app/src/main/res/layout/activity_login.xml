@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorAccent"
+    android:layout_margin="2sp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etloginId"
+        android:hint="Username"
+        android:layout_margin="4dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorPrimaryDark"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPasswordId"
+        android:hint="Password"
+        android:layout_below="@+id/etloginId"
+        android:layout_margin="4dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorPrimaryDark"
+        />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_below="@+id/etPasswordId"
+            android:id="@+id/btnloginId"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            />
+</RelativeLayout>
